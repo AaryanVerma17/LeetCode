@@ -2,29 +2,39 @@
 
 A personal repository documenting my ongoing journey in **Data Structures and Algorithms (DSA), problem-solving, and SQL** through [LeetCode](https://leetcode.com/).
 
-This repository serves as a collection of solutions, practice exercises, and concepts I explore while preparing for technical interviews and strengthening my programming fundamentals. It is updated regularly as I solve new problems and revisit existing ones.
+This repository contains solutions to problems I practise, along with individual README files documenting the problem details, approach, implementation, and relevant concepts. It is updated regularly as I solve new problems and revisit existing ones.
 
 ## Languages
 
-- **Python 3** — programming, algorithms, and problem-solving
-- **MySQL** — SQL queries, database concepts, and relational data
+- **Python 3**
+- **MySQL**
+- **C++**
+- **Java**
+- **C**
+- **C+**
+- **JavaScript**
 
 ## Repository Structure
 
 ```text
 LeetCode/
 ├── problem-name/
-│   └── solution.py / solution.sql
+│   ├── README.md
+│   └── solution
+├── ...
 └── README.md
 ```
 
-Problems are organized into individual directories, generally identified by their LeetCode problem number and name. Each directory contains the corresponding solution file or files.
+Each problem is organized into its own directory containing:
 
-The repository structure may evolve as the collection grows.
+- **README.md** — problem description or link, approach, explanation, and complexity analysis where applicable.
+- **Solution file** — the implementation of the solution in the relevant programming language or SQL.
 
-## Topics Covered
+File extensions and directory contents may vary depending on the language and requirements of each problem.
 
-The repository will grow to cover a range of programming and database concepts, including:
+## Topics
+
+As the repository grows, it will cover a range of concepts, including:
 
 - Arrays and Strings
 - Hash Tables and Dictionaries
@@ -32,27 +42,27 @@ The repository will grow to cover a range of programming and database concepts, 
 - Searching and Sorting
 - Data Structures and Algorithms
 - SQL Queries, Joins, and Database Fundamentals
-- Additional problem-solving patterns as I progress
+- Other problem-solving patterns and programming concepts
 
 ## Approach to Learning
 
-My goal is to develop a strong understanding of problem-solving rather than simply accumulate accepted submissions.
+My focus is on understanding the reasoning behind each solution rather than simply accumulating accepted submissions.
 
 For each problem, I aim to:
 
-1. Understand the problem statement, requirements, and constraints.
+1. Understand the problem statement and constraints.
 2. Identify the relevant concepts and develop a logical approach.
 3. Implement and test the solution, including edge cases.
 4. Analyse time and space complexity where applicable.
-5. Revisit problems to strengthen retention and independent problem-solving ability.
+5. Document the approach and revisit problems to improve independent problem-solving.
 
-I may explore alternative approaches and use documentation or learning resources when needed. The focus is on understanding the underlying logic and gradually becoming more independent.
+Documentation and learning resources may be used when needed, with an emphasis on understanding the underlying logic and becoming more independent over time.
 
 ## Progress
 
-This is an **ongoing, regularly updated repository**. New solutions, topics, and improvements will be added as I continue practising.
+This is an ongoing repository that is updated regularly as I practise, learn new concepts, and improve existing solutions.
 
-Rather than maintaining a manually updated problem count or checklist, the repository history and directory structure reflect its progress over time.
+The individual problem directories and Git history provide a record of my progress without requiring a manually maintained problem count.
 
 ## Tools & Platforms
 
@@ -62,7 +72,7 @@ Rather than maintaining a manually updated problem count or checklist, the repos
 
 ## Profiles
 
-- **LeetCode:** [killerhyena](https://leetcode.com/u/AaryanVerma17/)
+- **LeetCode:** [AaryanVerma17](https://leetcode.com/u/AaryanVerma17/)
 - **GitHub:** [AaryanVerma17](https://github.com/AaryanVerma17)
 
 ---
