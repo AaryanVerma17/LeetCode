@@ -1,12 +1,15 @@
+import bisect
 class Solution:
     def findTheDistanceValue(self, arr1: list[int], arr2: list[int], d: int) -> int:
-        l = 0
-        for i in range(len(arr1)):
+        arr2.sort()
+        c = 0
+        for x in arr1:
+            idx = bisect.bisect_left(arr2, x)
             valid = True
-            for j in range(len(arr2)):
-                if abs(arr1[i]-arr2[j]) <= d:
-                    valid = False
-                    break
+            if idx < len(arr2) and abs(arr2[idx] - x) <= d:
+                valid = False
+            if idx > 0 and abs(arr2[idx - 1] - x) <= d:
+                valid = False
             if valid:
-                l += 1
-        return l
+                c += 1
+        return c
