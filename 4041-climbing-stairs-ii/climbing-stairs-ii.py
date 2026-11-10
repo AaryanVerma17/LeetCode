@@ -1,14 +1,17 @@
 from typing import List
-import math
 class Solution:
     def climbStairs(self, n: int, costs: List[int]) -> int:
-        dp = [float('inf')] * (n + 1)
-        dp[0] = 0
+        if n == 0:
+            return 0
+        dp = [0, float('inf'), float('inf'), float('inf')]
         for i in range(1, n + 1):
             step_cost = costs[i - 1]
-            for j in range(max(0, i - 3), i):
-                jump_length = i - j
-                transition_cost = dp[j] + step_cost + (jump_length ** 2)
-                if transition_cost < dp[i]:
-                    dp[i] = transition_cost     
-        return dp[n]
+            min_cost = float('inf')
+            for jump in range(1, 4):
+                if i - jump >= 0:
+                    prev_cost = dp[(i - jump) % 4]
+                    total_cost = prev_cost + step_cost + (jump ** 2)
+                    if total_cost < min_cost:
+                        min_cost = total_cost
+            dp[i % 4] = min_cost
+        return dp[n % 4]
